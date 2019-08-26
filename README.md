@@ -1,7 +1,14 @@
 # videox_unityPlugin_china
 
+* [1、Unity接入](#1unity接入)
+* [2、SDK初始化](#2sdk初始化)
+* [3、广告功能](#3广告功能)
+    * [3.1、激励视频广告](#31-激励视频广告)
+    * [3.2、插屏广告](#32-插屏广告)
+    * [3.3、横幅广告](#33-横幅广告)
 
-## 1、VideoXSDK Unity接入
+
+## 1、Unity接入
 
 ### 1.1、导入VideoXSDK.unitypackage插件
 
@@ -19,7 +26,11 @@
 
 - 在 Xcode 工程的 *target* -> *General* -> *Embedded Binaries* 中添加 `VideoXSDK.framework` （如下图1所示）。
 
-![embedded binarise](https://github.com/VideoX-RewardVideoAds/videoxdemo_iOS/blob/master/images/embedded_binarise.jpg)<center>( 图 1 )</center>
+![embedded binarise](https://github.com/VideoX-RewardVideoAds/videoxdemo_iOS/blob/master/images/embedded_binarise.jpg)
+<p align="center">
+  ( 图 1 )
+</p>
+
 
 - 请将下面使用到的广告类型脚本挂靠在 unity 主Scene的 Main Camera 上（如下图2所示）。
   - `VXBannerAdsClient_iOS`
@@ -30,7 +41,10 @@
 
   
 ![unity_script](https://github.com/VideoX-RewardVideoAds/videoxdemo_iOS/blob/master/images/unity_script.jpg)
- <center>( 图 2 )</center>
+<p align="center">
+  ( 图 2 )
+</p>
+ 
 ## 2、SDK初始化
 
 ### 2.1 初始化SDK
