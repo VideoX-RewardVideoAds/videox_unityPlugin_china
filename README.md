@@ -24,13 +24,24 @@
 
 ### 1.3 iOS平台配置
 
-- 在 Xcode 工程的 *target* -> *General* -> *Embedded Binaries* 中添加 `VideoXSDK.framework` （如下图1所示）。
+##### Xcode工程配置
+
+- Xcode 版本小于11，在 Xcode 工程的 *target* -> *General* -> *Embedded Binaries* 中添加 `VideoXSDK.framework` （如下图1所示）。
 
 ![embedded binarise](https://github.com/VideoX-RewardVideoAds/videoxdemo_iOS/blob/master/images/embedded_binarise.jpg)
 <p align="center">
   ( 图 1 )
 </p>
 
+- Xcode 11，在***target*** -> ***General*** -> ***Frameworks,Libraries,and Embedded Content*** 栏添加`VideoXSDK.framework`，并选择Embed为 `Embed & Sign`
+
+- 在工程的Info.plist 添加值为布尔值类型`YES`、键为`GADIsAdManagerApp `  的 键值对。
+```
+<key>GADIsAdManagerApp</key>
+<true/>
+```
+
+##### Unity工程配置
 
 - 请将下面使用到的广告类型脚本挂靠在 unity 主Scene的 Main Camera 上（如下图2所示）。
   - `VXBannerAdsClient_iOS`
